@@ -9,4 +9,5 @@
 ### Lambda Expressions
 
 * If you want to understand functional style and Streams in Java 8, Lambda is the starting point
-
+* Lamdas are expressions to implement interfaces 
+* JVM generates bytecodes or new classes during runtime
