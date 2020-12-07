@@ -10,7 +10,7 @@ public class Lab03Main {
 		Function<Data, Data> bSquare = input -> new Data(input.a, input.b, input.result + (input.b * input.b));
 		Function<Data, Data> twoAB = input -> new Data(input.a, input.b, input.result + (2 * input.a * input.b));
 		
-		final int result = aSquare
+		var result = aSquare
 				.andThen(bSquare)
 				.andThen(twoAB)
 				.apply(new Data(10, 12, 0))
