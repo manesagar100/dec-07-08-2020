@@ -15,7 +15,9 @@ public class Lab05Main {
 		final int result = numbers
 			.stream()
 			.filter(it -> it % 2 == 0)
-			.filter(it -> it > 3)
+			.filter(it -> {
+				return it > 3;
+			})
 			.peek(it -> System.out.println("*** " + it)) // just to peek and check what's going on
 			.map(it -> it * 2)
 			//.skip(2)
@@ -69,8 +71,6 @@ public class Lab05Main {
 				.reduce((curValue, nextValue) -> curValue > nextValue ? curValue : nextValue)
 				.get();
 		System.out.println(maxWithoutUsingMaxFunction);
-		
-		
 		
 	}
 
