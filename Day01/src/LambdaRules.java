@@ -48,8 +48,10 @@ public class LambdaRules {
 
 }
 
+
 interface Operation {
 	int add(int a, int b);
+	//int subtract(int a, int b);
 }
 
 interface RandomGenerator {
