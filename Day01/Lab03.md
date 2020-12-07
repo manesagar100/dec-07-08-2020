@@ -15,7 +15,7 @@ public class Lab03 {
 		final int result = aSquare
 			.andThen(bSquare)
 			.andThen(twoAB)
-			.apply(new Params(10, 12, 0))
+			.apply(new Data(10, 12, 0))
 			.result;
 		System.out.println(result);
 	}
