@@ -24,3 +24,5 @@
 
 * __java.util.function__ package gives a list of pre-defined functional interfaces
 * Predicate, Function, Supplier, Consumer
+* Predicate returns a boolean; __filter__ method in Stream API accepts Predicate as arguments
+* Function takes any type and returns any type; __map__ method in Stream API accepts Function/BiFunction as arguments
