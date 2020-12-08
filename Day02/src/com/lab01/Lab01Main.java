@@ -25,9 +25,11 @@ public class Lab01Main {
 		// Add a discount of 5% to all the items and print the total price. Add a method calculateDiscount() in Item class.
 		final double discountedPrice = items
 			.stream()
-			.map(Item::calculateDiscount)
-			.reduce(Lab01Main::computeSum)
-			.get();
+			.mapToDouble(Item::calculateDiscount)
+			.sum();
+//			.map(Item::calculateDiscount)
+//			.reduce(Lab01Main::computeSum)
+//			.get();
 		System.out.println("Discounted price: " + discountedPrice);
 
 	}
@@ -39,6 +41,7 @@ public class Lab01Main {
 	static double computeSum(double currentValue, double nextValue) {
 		return currentValue + nextValue;
 	}
+	
 }
 
 class Item {
