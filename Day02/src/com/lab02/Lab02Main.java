@@ -40,7 +40,6 @@ public class Lab02Main {
 			Map<String, List<String>> groupedStates = lines
 				.stream()
 				.skip(1)
-				.map(line -> line)
 				.collect(Collectors.groupingBy(line -> line.split(",")[1]));
 				
 			groupedStates.forEach((key, value) -> System.out.println(key + ": , cities: " + value.size()));
@@ -51,7 +50,7 @@ public class Lab02Main {
 			final String json = lines
 				.stream()
 				.skip(1)
-				.map(Place::new)
+				.map(Place::new)	// .map(line -> new Place(line))
 				.map(Place::toJson)
 				.collect(Collectors.joining(",\n", "[\n", "\n]\n"));
 				
