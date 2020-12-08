@@ -17,8 +17,7 @@ public class RefactoredLab02Main {
 
 		generateTxtFile("./cities.txt", line -> line.split(",")[0]);
 		generateTxtFile("./states.txt", line -> line.split(",")[1]);
-
-
+		
 	}
 	
 	static void generateTxtFile(String fileName, Function<String , String> mapFn) throws IOException {
