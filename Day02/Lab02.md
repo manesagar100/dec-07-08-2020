@@ -11,7 +11,7 @@
 * Extract and store all the state names alone in a separate file called **states.txt**
 
 * Print the count of all cities grouped by state. Use **Collectors.groupingBy or Collectors.partitionBy**
-
+ 
 * Print the count of all unique states
 
 * Generate **places.json** file with all the contents in JSON format
