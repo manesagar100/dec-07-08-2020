@@ -7,6 +7,9 @@ public class Lab03Main {
 	public static void main(String[] args) {
 		Library library = new Library();
 		
+		
+		// Strategy design pattern
+		
 //		List<Integer> evenNumbers = library.find(e -> e % 2 == 0);
 //		List<Integer> oddNumbers = library.find(e -> e % 2 != 0);
 //		
